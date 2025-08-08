@@ -64,7 +64,7 @@ bun --hot src/index.ts
 
 The API server will be running at http://localhost:3000.
 
-Terminal 2: Start the Frontend Application
+#### **Terminal 2: Start the Frontend Application**
 Navigate to the frontend directory and start the Vite development server.
 
 # From the project's root directory:
