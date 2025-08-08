@@ -61,8 +61,6 @@ Navigate to the backend directory and start the server. The `--hot` flag enables
 # From the project's root directory:
 cd backend
 bun --hot src/index.ts
-
-```
 ```
 
 The API server will be running at `http://localhost:3000`.
@@ -85,5 +83,3 @@ A significant challenge during development was handling Amazon's robust anti-scr
 
 This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
 
-```
-```
