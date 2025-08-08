@@ -34,8 +34,7 @@ To set up and run this project locally, you will need to have [Bun](https://bun.
     ```bash
     git clone https://github.com/joberdan88/amazon-scraper-project.git
     ```
-    *(Don't forget to replace the URL with your own repository's URL)*
-
+    
 2.  **Navigate to the project directory:**
     ```bash
     cd amazon-scraper-project
