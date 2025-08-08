@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Lockfiles
+bun.lockb
+
+# Debug files
+debug.html
+
+# Build output
+/frontend/dist
+
+# Environment variables
+.env
+
