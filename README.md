@@ -32,7 +32,7 @@ To set up and run this project locally, you will need to have [Bun](https://bun.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+    git clone https://github.com/joberdan88/amazon-scraper-project.git
     ```
     *(Don't forget to replace the URL with your own repository's URL)*
 
@@ -74,6 +74,6 @@ bun dev
 
 The application will be accessible at the URL provided by Vite, typically http://localhost:5173.
 
-Development Challenge & Solution
-A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request. This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
+Development Challenge and Solution:
+A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request.  This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
 
