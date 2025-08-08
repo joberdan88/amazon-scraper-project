@@ -12,12 +12,12 @@ searchButton.addEventListener('click', async () => {
 
     // Validate if the user entered a keyword
     if (!keyword) {
-        statusDiv.textContent = 'Por favor, digite um produto para buscar.';
+        statusDiv.textContent = 'Please enter a product to search.';
         return;
     }
 
     // --- Prepare UI for loading state ---
-    statusDiv.textContent = 'Buscando... Por favor, aguarde.';
+    statusDiv.textContent = 'Searching... Please wait.';
     resultsContainer.innerHTML = ''; // Clear previous results
     searchButton.disabled = true; // Disable button to prevent multiple clicks
 
@@ -41,7 +41,7 @@ searchButton.addEventListener('click', async () => {
         statusDiv.textContent = '';
 
         if (products.length === 0) {
-            statusDiv.textContent = 'Nenhum produto encontrado.';
+            statusDiv.textContent = 'No products found.';
         } else {
             renderProducts(products);
         }
@@ -49,7 +49,7 @@ searchButton.addEventListener('click', async () => {
     } catch (error) {
         // Handle any errors that occurred during the fetch process
         console.error('Falha ao buscar produtos:', error);
-        statusDiv.textContent = `Erro: ${error.message}. Verifique se o servidor backend está rodando.`;
+        statusDiv.textContent = `Erro: ${error.message}. Please check if the backend server is running.`;
     } finally {
         // --- Re-enable the button after the process is complete ---
         searchButton.disabled = false;
@@ -76,12 +76,18 @@ function renderProducts(products) {
         // Create and configure the rating element
         const rating = document.createElement('p');
         rating.className = 'rating';
-        rating.textContent = product.rating;
+        // Translate the rating string from Portuguese to English for consistency
+        const translatedRating = product.rating
+        .replace(',', '.')
+        .replace('de 5 estrelas', 'out of 5 stars');
+        
+        rating.textContent = translatedRating;
 
+      
         // Create and configure the reviews element
         const reviews = document.createElement('p');
         reviews.className = 'reviews';
-        reviews.textContent = `${product.reviews} avaliações`;
+        reviews.textContent = `${product.reviews} reviews`;
 
         // Append all elements to the card, and the card to the container
         card.appendChild(img);
