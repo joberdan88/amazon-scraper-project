@@ -75,5 +75,7 @@ bun dev
 The application will be accessible at the URL provided by Vite, typically http://localhost:5173.
 
 Development Challenge and Solution:
-A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request.  This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
+A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request.  
+
+This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
 
