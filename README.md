@@ -1,4 +1,5 @@
 # Amazon Product Search Scraper
+
 ![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -26,13 +27,12 @@ This project is a simple web scraper for Amazon's search results, developed as a
 - **Vanilla JavaScript:** For DOM manipulation and API communication.
 - **HTML5 & CSS3:** For structure and styling.
 
-
 ## Project Setup
 To set up and run this project locally, you will need to have [Bun](https://bun.sh/) installed.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/joberdan88/amazon-scraper-project.git
+    git clone [https://github.com/joberdan88/amazon-scraper-project.git](https://github.com/joberdan88/amazon-scraper-project.git)
     ```
     
 2.  **Navigate to the project directory:**
@@ -64,7 +64,7 @@ bun --hot src/index.ts
 
 The API server will be running at http://localhost:3000.
 
-#### **Terminal 2: Start the Frontend Application**
+Terminal 2: Start the Frontend Application
 Navigate to the frontend directory and start the Vite development server.
 
 # From the project's root directory:
@@ -73,7 +73,7 @@ bun dev
 
 The application will be accessible at the URL provided by Vite, typically http://localhost:5173.
 
-Development Challenge and Solution:
-A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request.  
-This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
+Development Challenge and Solution
+A significant challenge during development was handling Amazon's robust anti-scraping measures, which would often return a 503 Service Unavailable error, blocking the request.
 
+This was overcome by implementing a comprehensive set of realistic HTTP headers in the axios request to more closely mimic a real browser, thus increasing the success rate of the scraping process.
